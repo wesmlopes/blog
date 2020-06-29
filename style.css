@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
@@ -216,4 +217,200 @@ footer {
     padding: 16px;
     background-color: white;
     font-family: Fira Code, monospace;
+=======
+* {
+  box-sizing: border-box;
+}
+
+#spaceship{
+  background-color: #ccc;
+  width: 40px;
+  height: 80px;
+  margin: 0 auto;
+  border-top: 10px solid #ccc;
+  -webkit-border-radius: 40px 40px 0px 0px;
+   border-radius: 40px 40px 0px 0px;
+  animation: fly 15s infinite, move 15s infinite;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
+#innerWindow{
+  background-color: #3399FF;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border-top: 10px solid #3399FF;
+  -webkit-border-radius: 40px 40px 0px 0px;
+   border-radius: 40px 40px 0px 0px;
+   position:relative;
+}
+
+#wing1{
+  width: 0px;
+  height: 0px;
+  border-right:10px solid #999;
+  border-left:10px solid transparent;
+  border-top:20px solid transparent;
+  border-bottom:20px solid #666;
+  right:20px;
+  position:relative;
+}
+
+#wing2{
+  width: 0px;
+  height: 0px;
+  border-right:10px solid transparent;
+  border-left:10px solid #999;
+  border-top:20px solid transparent;
+  border-bottom:20px solid #666;
+  left:40px;
+  top:-40px;
+  position:relative;
+}
+
+#fire{
+  width: 0px;
+  height: 0px;
+  border:40px solid transparent;
+  border-right: 20px solid orange;
+  border-left: 20px solid orange;
+  border-top: 20px solid darkorange;
+  border-bottom:20px solid transparent;
+  position: relative;
+  top:-40px;
+}
+
+#wings{
+  position:relative;
+}
+
+@keyframes fly{
+  0%{
+    /*transform: rotate(0deg) scale(1);*/
+  }
+  30%{
+    /*transform: rotate(-60deg) scale(1);*/
+  }
+  60%{
+    /*transform: rotate(60deg) scale(1);*/
+  }
+  
+  100%{
+    /*transform: rotate(0deg) scale(1);*/
+  }
+}
+
+@keyframes move{
+  0% {
+    bottom: 300px;
+    left: 100px;
+    transform: rotate(0deg);
+  }
+  10%{
+    bottom: 500px;
+    left: 100px;
+    transform: rotate(30deg);
+    
+  }
+  11%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: scale(0.5) rotate(90deg);
+    left: 50%;
+    bottom: 500px;
+  }
+  
+  89%{
+    transform: rotate(90deg);
+  }
+  
+  90%{
+    left: calc(100% - 300px);
+    bottom: 500px;
+    transform: rotate(30deg);
+  }
+  
+  100%{
+    bottom: 300px;
+    left: calc(100% - 200px);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+#corBranca {
+  color: #e0e0e0;
+  
+}
+
+#corAzul {
+  color: #569cd6;
+  font-family: Fira Code;
+}
+
+#textCenter {
+  text-align: center;
+}
+
+#centerAll {
+  align-items: center;
+}
+
+#corCinza {
+  color: #aaa;
+  font-family: Fira Code;
+}
+
+#corPrimaria {
+  background-color: #1e1e1e;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.foto-perfil {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  border-radius: 50%; /* arredondar a foto */
+}
+
+.corSecundaria {
+  background-color: #2c3e50;
+}
+p {
+  font-family: Fira Code;
+}
+.icones {
+  padding-left: 5px;
+}
+.titulosBrancos {
+  text-decoration: underline;
+  text-underline-position: below;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-family: Fira Code;
+}
+.titulosVerdes {
+  text-decoration: underline;
+  text-underline-position: below;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #18bc9c;
+  font-family: Fira Code;
+}
+
+footer {
+  color: #569cd6;
+  margin-top: auto;
+  font-size: 14px;
+  padding: 16px;
+  background-color: #1e1e1e;
+>>>>>>> 0b3e297673062e4802d0e3a914f374d4c30acd32
 }
